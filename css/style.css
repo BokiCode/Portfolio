@@ -90,6 +90,7 @@
 	max-width: 509px;
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 50px;
 }
 .aboutMeButton {
 	padding: 16px 20px;
@@ -107,4 +108,15 @@
 }
 .aboutMe p {
 	color: var(--gray-color);
+}
+.aboutMe .relative {
+	position: relative;
+}
+.aboutMe .absolute {
+	position: absolute;
+	bottom: 35px;
+	left: 35px;
+}
+.aboutMe .aboutMeParagraphMargin {
+	margin-top: 18px;
 }
