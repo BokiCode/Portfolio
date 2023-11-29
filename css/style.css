@@ -23,6 +23,15 @@
 .backgroundColorPrimary {
 	background-color: var(--primary-bg-color);
 }
+.button {
+	color: var(--primary-bg-color);
+	background-color: var(--dark-yellow-color);
+	padding: 8px 20px;
+	border-radius: 4px;
+	width: 129px;
+	text-decoration: none;
+	margin-top: 24px;
+}
 /*----------------------------*/
 .header {
 	display: flex;
@@ -66,12 +75,36 @@
 .hero .heroText .welcomeSpan {
 	color: var(--dark-yellow-color);
 }
-.hero .heroText a {
-	color: var(--primary-bg-color);
+.hero .button {
 	background-color: var(--light-yellow-color);
-	padding: 8px 20px;
-	border-radius: 4px;
-	width: 129px;
-	text-decoration: none;
-	margin-top: 24px;
+}
+
+/*----------------------------*/
+.aboutMe {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 96px 0;
+}
+.aboutMeText {
+	max-width: 509px;
+	display: flex;
+	flex-direction: column;
+}
+.aboutMeButton {
+	padding: 16px 20px;
+	color: var(--secondary-bg-color);
+	margin-top: 40px;
+}
+.aboutMe h1 {
+	color: var(--custom-white);
+	font-size: 2.625rem;
+	padding: 38px 0 24px 0;
+	margin-bottom: 32px;
+}
+.aboutMe .titleSpan {
+	color: var(--dark-yellow-color);
+}
+.aboutMe p {
+	color: var(--gray-color);
 }
