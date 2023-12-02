@@ -1,3 +1,11 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lexend Deca", sans-serif;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
 :root {
 	--primary-bg-color: #111827;
 	--secondary-bg-color: #020617;
@@ -6,12 +14,14 @@
 	--gray-color: #9ca3af;
 	--custom-white: #f3f4f6;
 }
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Lexend Deca", sans-serif;
-	line-height: 1.688rem;
+
+html {
+	overflow-x: hidden;
+}
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 .container {
 	width: 1110px;
@@ -29,7 +39,6 @@
 	padding: 8px 20px;
 	border-radius: 4px;
 	width: 129px;
-	text-decoration: none;
 	margin-top: 24px;
 }
 /*----------------------------*/
@@ -45,12 +54,14 @@
 	list-style: none;
 }
 .header ul li a {
-	text-decoration: none;
 	color: var(--gray-color);
 	text-transform: uppercase;
 }
 .header ul li:first-child a {
 	color: var(--custom-white);
+}
+.hamburgerButton {
+	display: none;
 }
 /*-----------------------------*/
 .hero {
@@ -58,6 +69,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 96px 0;
+	line-height: 1.688rem;
 }
 .hero .heroText {
 	display: flex;
@@ -85,6 +97,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 96px 0;
+	line-height: 1.688rem;
 }
 .aboutMeText {
 	max-width: 509px;
@@ -172,4 +185,53 @@
 }
 .skillsList .icon {
 	display: block;
+}
+@media only screen and (max-width: 1120px) {
+	.container {
+		width: 100%;
+		padding: 0 10px;
+	}
+	.heroImage,
+	.aboutMeSquare,
+	.aboutMeImg {
+		width: 350px;
+	}
+	.header {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+	.hero {
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+}
+@media only screen and (max-width: 980px) {
+	.container {
+		width: 100%;
+		padding: 0 10px;
+	}
+	.heroImage,
+	.aboutMeSquare,
+	.aboutMeImg {
+		width: 250px;
+	}
+	.header {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+	.hero {
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.header ul {
+		display: none;
+	}
+	.hamburgerButton {
+		display: block;
+	}
+	.navigation {
+		position: relative;
+	}
 }

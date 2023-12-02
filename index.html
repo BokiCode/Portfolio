@@ -19,16 +19,23 @@
 	<body>
 		<header class="backgroundColorSecondary">
 			<div class="container header">
-				<img src="images/AboutMe.png" alt="About me image" />
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Resume</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
+				<a href="#"><img src="images/AboutMe.png" alt="About me image" /></a>
+				<nav class="navigation">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Skills</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Resume</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<i
+						class="hamburgerButton fa-2x fa-solid fa-bars"
+						id="hamburgerButton"
+						style="color: #f3f4f6"
+					></i>
+				</nav>
 			</div>
 		</header>
 		<section class="backgroundColorPrimary">
@@ -48,9 +55,17 @@
 		<section class="backgroundColorSecondary">
 			<div class="container aboutMe">
 				<div class="relative">
-					<img src="images/backgroundSquare.png" alt="background square" />
+					<img
+						class="aboutMeSquare"
+						src="images/backgroundSquare.png"
+						alt="background square"
+					/>
 					<div class="absolute">
-						<img src="images/AboutMeImage.png" alt="About me image" />
+						<img
+							class="aboutMeImg"
+							src="images/AboutMeImage.png"
+							alt="About me image"
+						/>
 					</div>
 				</div>
 				<div class="aboutMeText">
@@ -149,5 +164,7 @@
 				</div>
 			</div>
 		</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="script/hamburger.js"></script>
 	</body>
 </html>
