@@ -60,8 +60,11 @@ body {
 .header ul li:first-child a {
 	color: var(--custom-white);
 }
-.hamburgerButton {
+.hamburgerMenu {
 	display: none;
+}
+.hamburgerMenu i {
+	cursor: pointer;
 }
 /*-----------------------------*/
 .hero {
@@ -227,11 +230,27 @@ body {
 @media only screen and (max-width: 768px) {
 	.header ul {
 		display: none;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		right: 0;
+		background-color: var(--secondary-bg-color);
+		z-index: 1;
 	}
-	.hamburgerButton {
+
+	.header ul li {
+		padding: 16px 0; /* Add some padding between items for better spacing */
+		width: 100%; /* Make each item take the full width */
+		text-align: center; /* Center the text within each item */
+	}
+
+	.header ul.show {
+		display: flex;
+	}
+
+	.hamburgerMenu {
 		display: block;
-	}
-	.navigation {
-		position: relative;
 	}
 }
