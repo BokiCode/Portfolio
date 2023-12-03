@@ -73,6 +73,8 @@ body {
 	align-items: center;
 	padding: 96px 0;
 	line-height: 1.688rem;
+	height: 620px;
+	gap: 10px;
 }
 .hero .heroText {
 	display: flex;
@@ -141,6 +143,7 @@ body {
 	padding: 96px 0;
 	display: flex;
 	flex-direction: column;
+	display: none; /* while doing responsive--------------------------------------------------------------------------*/
 }
 .skills h1 {
 	color: var(--custom-white);
@@ -213,11 +216,6 @@ body {
 		width: 100%;
 		padding: 0 10px;
 	}
-	.heroImage,
-	.aboutMeSquare,
-	.aboutMeImg {
-		width: 250px;
-	}
 	.header {
 		padding-top: 16px;
 		padding-bottom: 16px;
@@ -228,6 +226,12 @@ body {
 	}
 }
 @media only screen and (max-width: 768px) {
+	p {
+		font-size: 0.9rem;
+	}
+	.heroText h1 {
+		font-size: 2.2rem !important;
+	}
 	.header ul {
 		display: none;
 		flex-direction: column;
@@ -239,11 +243,16 @@ body {
 		background-color: var(--secondary-bg-color);
 		z-index: 1;
 	}
+	.heroImage,
+	.aboutMeSquare,
+	.aboutMeImg {
+		width: 300px;
+	}
 
 	.header ul li {
-		padding: 16px 0; /* Add some padding between items for better spacing */
-		width: 100%; /* Make each item take the full width */
-		text-align: center; /* Center the text within each item */
+		padding: 16px 0;
+		width: 100%;
+		text-align: center;
 	}
 
 	.header ul.show {
@@ -252,5 +261,42 @@ body {
 
 	.hamburgerMenu {
 		display: block;
+	}
+	.welcomeSpan {
+		font-size: 0.9rem;
+	}
+}
+@media only screen and (max-width: 614px) {
+	p {
+		font-size: 0.8rem;
+	}
+	.heroText h1 {
+		font-size: 2rem !important;
+	}
+	.hero {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.heroText {
+		justify-content: center;
+		align-items: center;
+	}
+	.button {
+		padding: 6px 16px;
+	}
+	.aboutMe {
+		flex-direction: column;
+	}
+	.aboutMe h1 {
+		font-size: 2.2rem !important;
+	}
+}
+@media only screen and (max-width: 376px) {
+	.heroImage,
+	.aboutMeSquare,
+	.aboutMeImg {
+		width: 250px;
 	}
 }
