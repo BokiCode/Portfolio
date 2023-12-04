@@ -103,6 +103,8 @@ body {
 	align-items: center;
 	padding: 96px 0;
 	line-height: 1.688rem;
+	height: 700px;
+	gap: 50px;
 }
 .aboutMeText {
 	max-width: 509px;
@@ -229,7 +231,8 @@ body {
 	p {
 		font-size: 0.9rem;
 	}
-	.heroText h1 {
+	.heroText h1,
+	.aboutMeText h1 {
 		font-size: 2.2rem !important;
 	}
 	.header ul {
@@ -265,6 +268,9 @@ body {
 	.welcomeSpan {
 		font-size: 0.9rem;
 	}
+	.hero {
+		height: 500px;
+	}
 }
 @media only screen and (max-width: 614px) {
 	p {
@@ -278,6 +284,7 @@ body {
 		align-items: center;
 		padding-top: 30px;
 		padding-bottom: 30px;
+		height: 620px;
 	}
 	.heroText {
 		justify-content: center;
