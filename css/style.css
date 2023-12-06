@@ -290,14 +290,28 @@ body {
 		justify-content: center;
 		align-items: center;
 	}
+	.heroImage {
+		padding: 20px 0;
+	}
 	.button {
 		padding: 6px 16px;
 	}
 	.aboutMe {
 		flex-direction: column;
+		height: 780px;
+		justify-content: center;
+		gap: 10px;
 	}
 	.aboutMe h1 {
 		font-size: 2.2rem !important;
+		padding-bottom: 10px;
+	}
+	.aboutMeSquare {
+		padding-top: 50px;
+	}
+	.aboutMe .absolute {
+		bottom: 25px;
+		left: 25px;
 	}
 }
 @media only screen and (max-width: 376px) {
@@ -305,5 +319,9 @@ body {
 	.aboutMeSquare,
 	.aboutMeImg {
 		width: 250px;
+	}
+	.aboutMe .absolute {
+		bottom: 20px;
+		left: 20px;
 	}
 }
