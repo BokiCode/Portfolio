@@ -145,7 +145,6 @@ body {
 	padding: 96px 0;
 	display: flex;
 	flex-direction: column;
-	display: none; /* while doing responsive--------------------------------------------------------------------------*/
 }
 .skills h1 {
 	color: var(--custom-white);
@@ -169,14 +168,20 @@ body {
 	padding-top: 56px;
 	justify-content: center;
 }
+.skills .cards li {
+	font-size: 20px;
+}
+.skills .cards i {
+	font-size: 27px;
+}
 .skills .card {
 	display: flex;
 	flex-direction: column;
 	border-radius: 12px;
 	align-items: center;
 	height: 342px;
-	width: 366px;
 	padding: 32px;
+	width: 366px;
 	gap: 32px;
 }
 .skills .card h2 {
@@ -185,14 +190,6 @@ body {
 .skills .card ul {
 	color: var(--gray-color);
 	list-style: none;
-}
-.skillsList {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.skillsList .icon {
-	display: block;
 }
 @media only screen and (max-width: 1120px) {
 	.container {
@@ -271,6 +268,9 @@ body {
 	.hero {
 		height: 500px;
 	}
+	.cards {
+		flex-direction: column;
+	}
 }
 @media only screen and (max-width: 614px) {
 	p {
@@ -323,5 +323,8 @@ body {
 	.aboutMe .absolute {
 		bottom: 20px;
 		left: 20px;
+	}
+	.skills .card {
+		width: 310px;
 	}
 }
