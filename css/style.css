@@ -41,6 +41,9 @@ body {
 	width: 129px;
 	margin-top: 24px;
 }
+p {
+	color: var(--gray-color);
+}
 /*----------------------------*/
 .header {
 	display: flex;
@@ -86,9 +89,6 @@ body {
 	font-size: 2.625rem;
 	padding: 38px 0 24px 0;
 }
-.hero .heroText p {
-	color: var(--gray-color);
-}
 .hero .heroText .welcomeSpan {
 	color: var(--dark-yellow-color);
 }
@@ -123,11 +123,8 @@ body {
 	padding: 38px 0 24px 0;
 	margin-bottom: 32px;
 }
-.aboutMe .titleSpan {
+.titleSpan {
 	color: var(--dark-yellow-color);
-}
-.aboutMe p {
-	color: var(--gray-color);
 }
 .aboutMe .relative {
 	position: relative;
@@ -145,14 +142,12 @@ body {
 	padding: 96px 0;
 	display: flex;
 	flex-direction: column;
+	line-height: 1.688rem;
 }
 .skills h1 {
 	color: var(--custom-white);
 	font-size: 2.625rem;
 	padding: 38px 0 24px 0;
-}
-.skills .titleSpan {
-	color: var(--dark-yellow-color);
 }
 .skills p {
 	color: var(--gray-color);
@@ -191,6 +186,43 @@ body {
 	color: var(--gray-color);
 	list-style: none;
 }
+/*--------------------------------*/
+.portfolio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 1.688rem;
+	padding: 96px 0;
+}
+.portfolio .portfolioText {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 80px;
+	max-width: 461px;
+}
+.portfolio .portfolioText h1 {
+	font-size: 2.625rem;
+	color: var(--custom-white);
+	padding-bottom: 40px;
+}
+.websitesContainer {
+	display: flex;
+	gap: 27px;
+	justify-content: center;
+	align-items: center;
+}
+.secondaryWebsites {
+	justify-content: space-around;
+}
+.secondaryWebsites {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 22px;
+}
 @media only screen and (max-width: 1120px) {
 	.container {
 		width: 100%;
@@ -208,6 +240,19 @@ body {
 	.hero {
 		padding-top: 96px;
 		padding-bottom: 96px;
+	}
+	.skills {
+		margin-bottom: 96px;
+	}
+	.portfolioText {
+		padding-top: 96px;
+	}
+	.portfolio .websitesContainer {
+		flex-direction: column;
+		padding-bottom: 96px;
+	}
+	.portfolio .secondaryWebsites {
+		max-width: 540px;
 	}
 }
 @media only screen and (max-width: 980px) {
@@ -229,7 +274,9 @@ body {
 		font-size: 0.9rem;
 	}
 	.heroText h1,
-	.aboutMeText h1 {
+	.aboutMeText h1,
+	.skills h1,
+	.portfolio h1 {
 		font-size: 2.2rem !important;
 	}
 	.header ul {
@@ -276,7 +323,9 @@ body {
 	p {
 		font-size: 0.8rem;
 	}
-	.heroText h1 {
+	.heroText h1,
+	.skills h1,
+	.porfolio h1 {
 		font-size: 2rem !important;
 	}
 	.hero {
@@ -313,6 +362,21 @@ body {
 		bottom: 25px;
 		left: 25px;
 	}
+	.portfolio .mainWebsite {
+		width: 370px;
+	}
+	.portfolio .mainWebsite img {
+		width: 100%;
+	}
+	.secondaryWebsites {
+		justify-content: center;
+	}
+	.secondaryWebsites .secondaryWebsite {
+		width: 173px;
+	}
+	.secondaryWebsites .secondaryWebsite img {
+		width: 100%;
+	}
 }
 @media only screen and (max-width: 376px) {
 	.heroImage,
@@ -325,6 +389,12 @@ body {
 		left: 20px;
 	}
 	.skills .card {
+		width: 310px;
+	}
+	.portfolio .mainWebsite {
+		width: 310px;
+	}
+	.portfolio .secondaryWebsite {
 		width: 310px;
 	}
 }
