@@ -44,6 +44,9 @@ body {
 p {
 	color: var(--gray-color);
 }
+.textAlignCenter {
+	text-align: center;
+}
 /*----------------------------*/
 .header {
 	display: flex;
@@ -223,6 +226,37 @@ p {
 	justify-content: space-around;
 	gap: 22px;
 }
+/*---------------------------------*/
+.contactMe {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding: 96px 0;
+}
+.contactMe .contactMeText {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 56px;
+	max-width: 685px;
+}
+.contactMe .contactMeText h1 {
+	font-size: 2.625rem;
+	color: var(--custom-white);
+	padding-bottom: 40px;
+}
+.contactMeField {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.contactMe .formDiv {
+	display: flex;
+	flex-direction: column;
+}
+
 @media only screen and (max-width: 1120px) {
 	.container {
 		width: 100%;

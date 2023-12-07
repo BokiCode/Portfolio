@@ -19,16 +19,16 @@
 	<body>
 		<header class="backgroundColorSecondary">
 			<div class="container header">
-				<a href="#"><img src="images/AboutMe.png" alt="About me image" /></a>
+				<a href="#index.html"
+					><img src="images/AboutMe.png" alt="About me image"
+				/></a>
 				<nav class="navigation">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Skills</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Resume</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#index.html">Home</a></li>
+						<li><a href="#hero">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contactMe">Contact</a></li>
 					</ul>
 					<div class="hamburgerMenu">
 						<i
@@ -49,12 +49,12 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
 						officia quaerat reprehenderit est, vero
 					</p>
-					<a class="button heroButton" href="#">Contact Me</a>
+					<a class="button heroButton" href="#contactMe">Contact Me</a>
 				</div>
 				<img class="heroImage" src="images/MyImage.png" alt="My Image" />
 			</div>
 		</section>
-		<section class="backgroundColorSecondary">
+		<section class="backgroundColorSecondary" id="hero">
 			<div class="container aboutMe">
 				<div class="relative">
 					<img
@@ -81,11 +81,11 @@
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
 						eaque laborum dicta necessitatibus officia non.
 					</p>
-					<a class="button aboutMeButton" href="#">Contact Me</a>
+					<a class="button aboutMeButton" href="#contactMe">Contact Me</a>
 				</div>
 			</div>
 		</section>
-		<section class="backgroundColorPrimary">
+		<section class="backgroundColorPrimary" id="skills">
 			<div class="container skills">
 				<div class="skillsText">
 					<h1>My <span class="titleSpan">Skills</span></h1>
@@ -149,11 +149,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="backgroundColorSecondary">
+		<section class="backgroundColorSecondary" id="portfolio">
 			<div class="container portfolio">
 				<div class="portfolioText">
 					<h1>My <span class="titleSpan">Portfolio</span></h1>
-					<p>
+					<p class="textAlignCenter">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
 						similique veniam expedita iusto minus ut inventore repudiandae.
 					</p>
@@ -185,6 +185,48 @@
 								><img src="images/secondaryWebsite.png" alt="secondary website"
 							/></a>
 						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="backgroundColorPrimary" id="contactMe">
+			<div class="container contactMe">
+				<div class="contactMeText">
+					<h1>Contact <span class="titleSpan">Me</span></h1>
+					<p class="textAlignCenter">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Error omnis
+						eum, ex maiores animi tempore eos sit dignissimos quod aperiam.
+					</p>
+				</div>
+				<div class="contactMeField">
+					<div class="contactMeInfo">
+						<p>Location _ Serbia, Loznica</p>
+						<p>Phone _ +123 456789012</p>
+						<p>E main _ bojandjukic05@gmail.com</p>
+						<p>Website _ bokicode.github.io/Portfolio</p>
+					</div>
+
+					<div class="formDiv">
+						<form id="contactForm">
+							<input
+								type="text"
+								name="name"
+								id="name"
+								class="formControl"
+								placeholder="Name"
+								required
+							/>
+							<textarea
+								id="message"
+								class="messageTextArea"
+								name="message"
+								placeholder="Message"
+								required
+							></textarea>
+							<button type="submit" id="submit" class="submitButton">
+								Contact me
+							</button>
+						</form>
 					</div>
 				</div>
 			</div>
