@@ -14,8 +14,10 @@
 	--gray-color: #9ca3af;
 	--custom-white: #f3f4f6;
 }
-
-html {
+::-webkit-input-placeholder {
+	color: var(--custom-white);
+}
+::-webkit-input- html {
 	overflow-x: hidden;
 }
 body {
@@ -47,6 +49,7 @@ p {
 .textAlignCenter {
 	text-align: center;
 }
+
 /*----------------------------*/
 .header {
 	display: flex;
@@ -233,7 +236,9 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	padding: 96px 0;
+	line-height: 1.688rem;
 }
+
 .contactMe .contactMeText {
 	display: flex;
 	flex-direction: column;
@@ -247,14 +252,58 @@ p {
 	color: var(--custom-white);
 	padding-bottom: 40px;
 }
+.contactSpan {
+	color: var(--dark-yellow-color);
+}
 .contactMeField {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 }
-.contactMe .formDiv {
+.contactMeField p {
+	color: var(--custom-white);
+}
+.contactMeInfo {
+	line-height: 3rem;
+}
+.contactMe .contactForm {
 	display: flex;
 	flex-direction: column;
+}
+.contactMe .contactForm .nameField {
+	color: var(--custom-white);
+	background-color: var(--secondary-bg-color);
+	border: 1px solid transparent;
+	width: 350px;
+	height: 63px;
+	padding: 15px;
+	margin-bottom: 32px;
+}
+.contactMe .contactForm .messageField {
+	min-width: 540px;
+	min-height: 166px;
+	background-color: var(--secondary-bg-color);
+	border: 1px solid transparent;
+	padding: 15px;
+	margin-bottom: 32px;
+	color: var(--custom-white);
+}
+.contactMe .submitButton {
+	color: var(--primary-bg-color);
+	padding: 16px 20px;
+	width: 123px;
+	background-color: var(--dark-yellow-color);
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+/*---------------------------*/
+.footer {
+	padding: 56px 0;
+}
+.footer h1 {
+	color: var(--custom-white);
+	font-size: 2.625rem;
 }
 
 @media only screen and (max-width: 1120px) {
@@ -288,6 +337,15 @@ p {
 	.portfolio .secondaryWebsites {
 		max-width: 540px;
 	}
+	.contactMeText {
+		padding-top: 96px;
+	}
+	.contactMe {
+		padding-bottom: 96px;
+	}
+	.contactMe .contactForm .messageField {
+		min-width: 350px;
+	}
 }
 @media only screen and (max-width: 980px) {
 	.container {
@@ -302,6 +360,9 @@ p {
 		padding-top: 96px;
 		padding-bottom: 96px;
 	}
+	.contactMe {
+		padding-bottom: 96px;
+	}
 }
 @media only screen and (max-width: 768px) {
 	p {
@@ -310,7 +371,8 @@ p {
 	.heroText h1,
 	.aboutMeText h1,
 	.skills h1,
-	.portfolio h1 {
+	.portfolio h1,
+	.contactMe h1 {
 		font-size: 2.2rem !important;
 	}
 	.header ul {
@@ -359,7 +421,8 @@ p {
 	}
 	.heroText h1,
 	.skills h1,
-	.porfolio h1 {
+	.porfolio h1,
+	.contactMe h1 {
 		font-size: 2rem !important;
 	}
 	.hero {
@@ -411,6 +474,12 @@ p {
 	.secondaryWebsites .secondaryWebsite img {
 		width: 100%;
 	}
+	.contactMeField {
+		flex-direction: column;
+	}
+	.contactMeInfo {
+		padding-bottom: 20px;
+	}
 }
 @media only screen and (max-width: 376px) {
 	.heroImage,
@@ -430,5 +499,11 @@ p {
 	}
 	.portfolio .secondaryWebsite {
 		width: 310px;
+	}
+	.contactMe .contactForm .messageField {
+		min-width: 250px;
+	}
+	.contactMe .contactForm .nameField {
+		width: 250px;
 	}
 }
