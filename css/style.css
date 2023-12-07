@@ -300,10 +300,27 @@ p {
 /*---------------------------*/
 .footer {
 	padding: 56px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.footerText {
+	max-width: 685px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .footer h1 {
 	color: var(--custom-white);
 	font-size: 2.625rem;
+	padding-bottom: 24px;
+}
+.iconsContainer {
+	display: flex;
+	gap: 16px;
+	padding-top: 56px;
 }
 
 @media only screen and (max-width: 1120px) {
@@ -346,6 +363,9 @@ p {
 	.contactMe .contactForm .messageField {
 		min-width: 350px;
 	}
+	.footer {
+		margin-bottom: 50px;
+	}
 }
 @media only screen and (max-width: 980px) {
 	.container {
@@ -372,7 +392,8 @@ p {
 	.aboutMeText h1,
 	.skills h1,
 	.portfolio h1,
-	.contactMe h1 {
+	.contactMe h1,
+	.footer h1 {
 		font-size: 2.2rem !important;
 	}
 	.header ul {
